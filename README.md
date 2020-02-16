@@ -1,4 +1,10 @@
 
+### Run Locally
+
+```shell script
+go run ./cmd/example/
+```
+
 ### Build
 
 ```shell script
