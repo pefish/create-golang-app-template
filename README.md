@@ -8,11 +8,11 @@ go run ./cmd/example/
 ### Build
 
 ```shell script
-go build -o example ./cmd/example/
+go build -o build/example ./cmd/example/
 ```
 
 ### Run
 
 ```shell script
-./example
+./build/example
 ```
