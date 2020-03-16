@@ -2,13 +2,13 @@
 ### Run Locally
 
 ```shell script
-go run ./cmd/example/
+go run ./bin/example/
 ```
 
 ### Build
 
 ```shell script
-go build -o build/example ./cmd/example/
+go build -o build/example ./bin/example/
 ```
 
 ### Run
