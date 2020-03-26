@@ -8,7 +8,7 @@ go run ./bin/example/
 ### Build
 
 ```shell script
-go build -o build/example ./bin/example/
+make
 ```
 
 ### Run
