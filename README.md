@@ -2,7 +2,7 @@
 ### Run Locally
 
 ```shell script
-go run ./bin/example/
+go run ./bin/main/
 ```
 
 ### Build
@@ -14,5 +14,5 @@ make
 ### Run
 
 ```shell script
-./build/example
+./build/main
 ```
