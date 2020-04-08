@@ -2,13 +2,13 @@
 ### Run Locally
 
 ```shell script
-go run ./bin/main/
+make run TARGET=./bin/main/
 ```
 
-### Build
+### Build Linux
 
 ```shell script
-make
+make TARGET=./bin/main/
 ```
 
 ### Run
