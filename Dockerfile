@@ -9,6 +9,7 @@ RUN make
 
 FROM scratch as final
 COPY --from=builder /app/build/* /
+COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 ENV GO_CONFIG /config/pom.yaml
 ENV GO_SECRET /secret/pom.yaml
 # CMD ["./main"]
