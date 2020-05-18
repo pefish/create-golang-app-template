@@ -1,16 +1,17 @@
 
-DEFAULT: all
+DEFAULT: build-cur
 
-BLDDIR = build
-APPS = main test
+GORUN = env GO111MODULE=on go run
 
-$(BLDDIR)/main: $(wildcard ./bin/main/*.go ./*/*.go)  # 这些文件变更，main才能重新构建
-$(BLDDIR)/test: $(wildcard ./bin/test/*.go ./*/*.go)
 
-all: $(APPS)
+build-cur:
+	$(GORUN) internal/build-bin/build_bin.go build-cur
 
-$(BLDDIR)/%:
-	@mkdir -p $(dir $@)
-	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -installsuffix cgo -a -tags netgo -ldflags '-w -extldflags "-static"' -o $@ ./bin/$*
+build-cur-pack:
+	$(GORUN) internal/build-bin/build_bin.go build-cur-pack
 
-$(APPS): %: $(BLDDIR)/%
+build-all:
+	$(GORUN) internal/build-bin/build_bin.go build-all
+
+build-all-pack:
+	$(GORUN) internal/build-bin/build_bin.go build-all-pack
