@@ -1,8 +1,17 @@
 
-.idea
+**/.idea
 
-.vscode
+**/.vscode
 
-build
+**/build
 
-.DS_Store
+**/.DS_Store
+
+**/log
+
+**/secret/prod.yaml
+**/config/prod.yaml
+**/secret/local.yaml
+**/config/local.yaml
+**/secret/dev.yaml
+**/config/dev.yaml
