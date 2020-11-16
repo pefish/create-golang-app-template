@@ -17,12 +17,16 @@ func NewDefaultCommand() *DefaultCommand {
 	}
 }
 
-func (s *DefaultCommand) DecorateFlagSet(flagSet *flag.FlagSet) error {
+func (dc *DefaultCommand) DecorateFlagSet(flagSet *flag.FlagSet) error {
 	flagSet.String("tcp-address", "0.0.0.0:8000", "<addr>:<port> to listen on for TCP clients")
 	return nil
 }
 
-func (s *DefaultCommand) Start() error {
+func (dc *DefaultCommand) OnExited() error {
+	return nil
+}
+
+func (dc *DefaultCommand) Start() error {
 	tcpAddress, err := go_config.Config.GetString("tcp-address")
 	if err != nil {
 		return err
