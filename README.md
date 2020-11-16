@@ -6,10 +6,22 @@ Read this in other languages: [English](README.md), [简体中文](README_zh-cn.
 
 XXX
 
+## Install
+
+```
+go get github.com/pefish/XXX/cmd/XXX
+```
+
 ## Quick start
 
-```go
+```shell script
+go run ./cmd/XXX --config=/path/to/config
+```
 
+or
+
+```shell script
+GO_CONFIG=/path/to/config go run ./cmd/XXX
 ```
 
 ## Document
