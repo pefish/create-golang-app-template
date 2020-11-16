@@ -25,12 +25,10 @@ func (s *DefaultCommand) DecorateFlagSet(flagSet *flag.FlagSet) error {
 func (s *DefaultCommand) Start() error {
 	tcpAddress, err := go_config.Config.GetString("tcp-address")
 	if err != nil {
-		go_logger.Logger.ErrorF("get config error - %s", err)
 		return err
 	}
 	tcpListener, err := net.Listen("tcp", tcpAddress)
 	if err != nil {
-		go_logger.Logger.ErrorF("listen (%s) failed - %s", tcpAddress, err)
 		return err
 	}
 	go_logger.Logger.InfoF("listening on %s", tcpListener.Addr())
