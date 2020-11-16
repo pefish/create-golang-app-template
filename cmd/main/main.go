@@ -1,7 +1,7 @@
 package main
 
 import (
-	"create_golang_app_template/pkg/command"
+	"create_golang_app_template/cmd/main/command"
 	"create_golang_app_template/version"
 	"github.com/pefish/go-commander"
 	"log"
