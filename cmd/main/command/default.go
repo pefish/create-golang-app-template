@@ -2,6 +2,7 @@ package command
 
 import (
 	"flag"
+	"github.com/pefish/go-commander"
 	go_config "github.com/pefish/go-config"
 	go_logger "github.com/pefish/go-logger"
 	"net"
@@ -26,7 +27,7 @@ func (dc *DefaultCommand) OnExited() error {
 	return nil
 }
 
-func (dc *DefaultCommand) Start() error {
+func (dc *DefaultCommand) Start(data commander.StartData) error {
 	tcpAddress, err := go_config.Config.GetString("tcp-address")
 	if err != nil {
 		return err
