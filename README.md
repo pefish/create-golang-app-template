@@ -15,13 +15,13 @@ go get github.com/pefish/XXX/cmd/XXX
 ## Quick start
 
 ```shell script
-go run ./cmd/XXX --config=/path/to/config
+XXX --config=/path/to/config
 ```
 
 or
 
 ```shell script
-GO_CONFIG=/path/to/config go run ./cmd/XXX
+GO_CONFIG=/path/to/config XXX
 ```
 
 ## Document
