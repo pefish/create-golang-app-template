@@ -4,7 +4,7 @@ import (
 	"create_golang_app_template/cmd/main/command"
 	"create_golang_app_template/version"
 	"github.com/pefish/go-commander"
-	"log"
+	go_logger "github.com/pefish/go-logger"
 )
 
 func main() {
@@ -14,6 +14,6 @@ func main() {
 	commanderInstance.RegisterDefaultSubcommand(command.NewDefaultCommand())
 	err := commanderInstance.Run()
 	if err != nil {
-		log.Fatal(err)
+		go_logger.Logger.Error(err)
 	}
 }
