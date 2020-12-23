@@ -7,9 +7,9 @@ RUN make
 
 FROM pefish/ubuntu18_04:v1.0
 WORKDIR /app
-COPY --from=builder /app/build/bin/linux/ /app/
+COPY --from=builder /app/build/bin/linux/ /app/bin/
 ENV GO_CONFIG /app/config/pom.yaml
 ENV GO_SECRET /app/secret/pom.yaml
-CMD ["/app/*", "--help"]
+CMD ["/app/bin/*", "--help"]
 
 # docker build -t pefish/main:v0.0.1 .
