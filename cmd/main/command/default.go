@@ -23,11 +23,11 @@ func (dc *DefaultCommand) DecorateFlagSet(flagSet *flag.FlagSet) error {
 	return nil
 }
 
-func (dc *DefaultCommand) OnExited() error {
+func (dc *DefaultCommand) OnExited(data *commander.StartData) error {
 	return nil
 }
 
-func (dc *DefaultCommand) Start(data commander.StartData) error {
+func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	tcpAddress, err := go_config.Config.GetString("tcp-address")
 	if err != nil {
 		return err
