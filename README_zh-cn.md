@@ -15,13 +15,13 @@ go get github.com/pefish/XXX/cmd/XXX
 ## 快速开始
 
 ```shell script
-go run ./cmd/XXX --config=/path/to/config
+XXX --config=/path/to/config
 ```
 
 或者
 
 ```shell script
-GO_CONFIG=/path/to/config go run ./cmd/XXX
+GO_CONFIG=/path/to/config XXX
 ```
 
 ## 文档
