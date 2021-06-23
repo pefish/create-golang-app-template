@@ -36,8 +36,11 @@ func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	if err != nil {
 		return err
 	}
-	defer tcpListener.Close()
-	go_logger.Logger.InfoF("listening on %s", tcpListener.Addr())
+	defer func() {
+		tcpListener.Close()
+		go_logger.Logger.InfoF("HTTP endpoint closed. url: %s", tcpListener.Addr())
+	}()
+	go_logger.Logger.InfoF("HTTP endpoint opened. url: %s", tcpListener.Addr())
 
 	<- data.ExitCancelCtx.Done()
 	return nil
