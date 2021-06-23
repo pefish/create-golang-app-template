@@ -28,7 +28,7 @@ func (dc *DefaultCommand) OnExited(data *commander.StartData) error {
 }
 
 func (dc *DefaultCommand) Start(data *commander.StartData) error {
-	tcpAddress, err := go_config.Config.GetString("tcp-address")
+	tcpAddress, err := go_config.ConfigManagerInstance.GetString("tcp-address")
 	if err != nil {
 		return err
 	}
@@ -38,6 +38,8 @@ func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	}
 	go_logger.Logger.InfoF("listening on %s", tcpListener.Addr())
 
-	select {}
+	<- data.ExitCancelCtx.Done()
+	tcpListener.Close()
+	return nil
 }
 
