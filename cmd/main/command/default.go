@@ -36,10 +36,10 @@ func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	if err != nil {
 		return err
 	}
+	defer tcpListener.Close()
 	go_logger.Logger.InfoF("listening on %s", tcpListener.Addr())
 
 	<- data.ExitCancelCtx.Done()
-	tcpListener.Close()
 	return nil
 }
 
