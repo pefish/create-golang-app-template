@@ -1,6 +1,6 @@
 module create_golang_app_template
 
-go 1.16
+go 1.17
 
 require (
 	github.com/pefish/go-commander v0.4.6
