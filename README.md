@@ -9,7 +9,7 @@ XXX
 ## Install
 
 ```
-go get github.com/pefish/XXX/cmd/XXX
+go install github.com/pefish/XXX/cmd/XXX@latest
 ```
 
 ## Quick start
