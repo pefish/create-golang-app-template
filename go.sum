@@ -14,8 +14,12 @@ github.com/mitchellh/mapstructure v1.1.2 h1:fmNYVwqnSfB9mZU6OS2O6GsXM+wcskZDuKQz
 github.com/mitchellh/mapstructure v1.1.2/go.mod h1:FVVH3fgwuzCH5S8UJGiWEs2h04kUh9fWfEaFds41c1Y=
 github.com/pefish/go-commander v0.4.6 h1:R8IQAJaXc51gbKPrH7L9PmlXnEd2q8aL6Wj/Dr/7vH4=
 github.com/pefish/go-commander v0.4.6/go.mod h1:pS52fHSfwK7KxjfRbiTNwhdyznisP1QAtDNL/b+/4io=
+github.com/pefish/go-commander v0.4.10 h1:fjuGu3JxX6R9yF1xTOEhWgEkI4Q1zKjqcIOQd03LKdQ=
+github.com/pefish/go-commander v0.4.10/go.mod h1:K8ZvV8J2LdNKW2N78y2Ud6K9hORSenoAS8UeBsxSQLI=
 github.com/pefish/go-config v0.2.2 h1:4WTcsE0XzXMLfHZ2a0DT2x1yQQds+q0eDFJO3SrUCFI=
 github.com/pefish/go-config v0.2.2/go.mod h1:HrlPD1p347MMdcXOOCqJLwkq9gD1d9YIk+QCxeJaV2g=
+github.com/pefish/go-config v0.2.3 h1:Wi5rO6TFIrbeSVZ8Jle5Lkkn38/K0t0cvbabsZFfBHs=
+github.com/pefish/go-config v0.2.3/go.mod h1:HrlPD1p347MMdcXOOCqJLwkq9gD1d9YIk+QCxeJaV2g=
 github.com/pefish/go-error v1.0.3/go.mod h1:OLnjLGHgKqEZSsSwKdx6QDBH9o9mqVCMTBroRuUZQDc=
 github.com/pefish/go-logger v0.4.14/go.mod h1:N2S6ZFg70PyjD2piBtGCVCPH4qftR+aCCpN0ZW/arfc=
 github.com/pefish/go-logger v0.4.15 h1:h6MIeV9SfmJtdiWyjo3tR05dber1Hy7ymli02wcaO/E=
