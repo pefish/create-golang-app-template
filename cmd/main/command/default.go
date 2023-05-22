@@ -1,6 +1,7 @@
 package command
 
 import (
+	"create_golang_app_template/pkg/global"
 	"flag"
 	"github.com/pefish/go-commander"
 	go_config "github.com/pefish/go-config"
@@ -9,13 +10,10 @@ import (
 )
 
 type DefaultCommand struct {
-
 }
 
 func NewDefaultCommand() *DefaultCommand {
-	return &DefaultCommand{
-
-	}
+	return &DefaultCommand{}
 }
 
 func (dc *DefaultCommand) DecorateFlagSet(flagSet *flag.FlagSet) error {
@@ -28,11 +26,12 @@ func (dc *DefaultCommand) OnExited(data *commander.StartData) error {
 }
 
 func (dc *DefaultCommand) Start(data *commander.StartData) error {
-	tcpAddress, err := go_config.ConfigManagerInstance.GetString("tcp-address")
+	err := go_config.ConfigManagerInstance.Unmarshal(&global.MyConfig)
 	if err != nil {
 		return err
 	}
-	tcpListener, err := net.Listen("tcp", tcpAddress)
+
+	tcpListener, err := net.Listen("tcp", global.MyConfig.TcpAddress)
 	if err != nil {
 		return err
 	}
@@ -42,7 +41,6 @@ func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	}()
 	go_logger.Logger.InfoF("HTTP endpoint opened. url: %s", tcpListener.Addr())
 
-	<- data.ExitCancelCtx.Done()
+	<-data.ExitCancelCtx.Done()
 	return nil
 }
-
