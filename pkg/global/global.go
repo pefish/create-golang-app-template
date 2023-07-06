@@ -1,7 +1,9 @@
 package global
 
 type Config struct {
-	TcpAddress string `json:"tcpAddress"`
+	TestTask struct {
+		Interval uint64 `json:"interval"`
+	} `json:"testTask"`
 }
 
-var MyConfig Config
+var GlobalConfig Config
