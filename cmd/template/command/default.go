@@ -20,11 +20,7 @@ func (dc *DefaultCommand) DecorateFlagSet(flagSet *flag.FlagSet) error {
 	return nil
 }
 
-func (dc *DefaultCommand) OnExited(data *commander.StartData) error {
-	return nil
-}
-
-func (dc *DefaultCommand) Start(data *commander.StartData) error {
+func (dc *DefaultCommand) Init(data *commander.StartData) error {
 	err := go_config.ConfigManagerInstance.Unmarshal(&global.GlobalConfig)
 	if err != nil {
 		return err
@@ -39,6 +35,14 @@ func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	//})
 	//defer go_mysql.MysqlInstance.Close()
 
+	return nil
+}
+
+func (dc *DefaultCommand) OnExited(data *commander.StartData) error {
+	return nil
+}
+
+func (dc *DefaultCommand) Start(data *commander.StartData) error {
 	taskDriver := task_driver.NewTaskDriver()
 	taskDriver.Register(task.NewTest())
 	taskDriver.RunWait(data.ExitCancelCtx)
