@@ -33,12 +33,12 @@ func (dc *DefaultCommand) Init(data *commander.StartData) error {
 	//	Password: global.GlobalConfig.Db.Pass,
 	//	Database: global.GlobalConfig.Db.Db,
 	//})
-	//defer go_mysql.MysqlInstance.Close()
 
 	return nil
 }
 
 func (dc *DefaultCommand) OnExited(data *commander.StartData) error {
+	//go_mysql.MysqlInstance.Close()
 	return nil
 }
 
