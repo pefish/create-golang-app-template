@@ -3,9 +3,8 @@
 set -euxo pipefail
 
 projectName="test-project"
-srcPath=~/src/test/test-project/
-configPath=/home/ubuntu/data/test/test-project-prod
-port="8000"
+srcPath=`pwd`
+configPath=$CONFIG_PATH
 
 cd ${srcPath}
 
@@ -19,4 +18,4 @@ fi
 
 sudo docker stop ${projectName}-prod && sudo docker rm ${projectName}-prod
 
-sudo docker run --name ${projectName}-prod -d -v ${configPath}:/app/config -p ${port}:${port} ${imageName}
+sudo docker run --name ${projectName}-prod -d -v ${configPath}:/app/config -p ${imageName}
