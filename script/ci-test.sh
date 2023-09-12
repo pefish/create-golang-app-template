@@ -18,7 +18,7 @@ fi
 
 sudo docker stop ${projectName}-test && sudo docker rm ${projectName}-test
 
-sudo docker run --name ${projectName}-test -d -v ${configPath}:/app/config -p ${imageName}
+sudo docker run --name ${projectName}-test -d -v ${configPath}:/app/config ${imageName}
 
 
 # CONFIG_PATH=** ./script/ci-test.sh

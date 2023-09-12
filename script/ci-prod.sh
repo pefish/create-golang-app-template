@@ -8,7 +8,7 @@ configPath=$CONFIG_PATH
 
 cd ${srcPath}
 
-git reset --hard && git pull && git checkout test && git pull
+git reset --hard && git pull && git checkout main && git pull
 
 imageName="${projectName}:`git rev-parse --short HEAD`"
 
@@ -18,4 +18,4 @@ fi
 
 sudo docker stop ${projectName}-prod && sudo docker rm ${projectName}-prod
 
-sudo docker run --name ${projectName}-prod -d -v ${configPath}:/app/config -p ${imageName}
+sudo docker run --name ${projectName}-prod -d -v ${configPath}:/app/config ${imageName}
