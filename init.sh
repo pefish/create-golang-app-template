@@ -6,3 +6,5 @@ cat README.md | sed "s@XXX@${PROJECT_NAME}@g" > temp && rm -rf README.md && mv t
 
 cat README_zh-cn.md | sed "s@XXX@${PROJECT_NAME}@g" > temp && rm -rf README_zh-cn.md && mv temp README_zh-cn.md
 
+cat Dockerfile | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf Dockerfile && mv temp Dockerfile
+
