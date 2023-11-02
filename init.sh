@@ -8,3 +8,6 @@ cat README_zh-cn.md | sed "s@XXX@${PROJECT_NAME}@g" > temp && rm -rf README_zh-c
 
 cat Dockerfile | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf Dockerfile && mv temp Dockerfile
 
+mv ./cmd/template ./cmd/"${PROJECT_NAME}"
+
+cat version/version.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf version/version.go && mv temp version/version.go
