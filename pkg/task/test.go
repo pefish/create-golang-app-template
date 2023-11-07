@@ -2,9 +2,10 @@ package task
 
 import (
 	"context"
-	"create_golang_app_template/pkg/global"
-	go_logger "github.com/pefish/go-logger"
 	"time"
+
+	go_logger "github.com/pefish/go-logger"
+	"github.com/pefish/template/pkg/global"
 )
 
 type Test struct {

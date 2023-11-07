@@ -1,4 +1,4 @@
-module create_golang_app_template
+module github.com/pefish/template
 
 go 1.20
 

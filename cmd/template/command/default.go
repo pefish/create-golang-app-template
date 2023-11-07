@@ -1,12 +1,13 @@
 package command
 
 import (
-	"create_golang_app_template/pkg/global"
-	"create_golang_app_template/pkg/task"
 	"flag"
+
 	"github.com/pefish/go-commander"
 	go_config "github.com/pefish/go-config"
 	task_driver "github.com/pefish/go-task-driver"
+	"github.com/pefish/template/pkg/global"
+	"github.com/pefish/template/pkg/task"
 )
 
 type DefaultCommand struct {
