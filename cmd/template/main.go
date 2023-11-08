@@ -1,10 +1,10 @@
 package main
 
 import (
-	"create_golang_app_template/cmd/template/command"
-	"create_golang_app_template/version"
 	"github.com/pefish/go-commander"
 	go_logger "github.com/pefish/go-logger"
+	"github.com/pefish/template/cmd/template/command"
+	"github.com/pefish/template/version"
 )
 
 func main() {
