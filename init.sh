@@ -11,3 +11,10 @@ cat Dockerfile | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf Dockerfile 
 mv ./cmd/template ./cmd/"${PROJECT_NAME}"
 
 cat version/version.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf version/version.go && mv temp version/version.go
+
+cat cmd/template/main.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf cmd/template/main.go && mv temp cmd/template/main.go
+
+cat cmd/template/command/default.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf cmd/template/command/default.go && mv temp cmd/template/command/default.go
+
+cat pkg/task/test.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf pkg/task/test.go && mv temp pkg/task/test.go
+
