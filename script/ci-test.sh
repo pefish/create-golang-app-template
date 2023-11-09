@@ -2,7 +2,7 @@
 
 set -euxo pipefail
 
-projectName="test-project"
+projectName="template"
 srcPath=`pwd`
 configPath=$CONFIG_PATH
 
