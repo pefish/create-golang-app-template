@@ -18,3 +18,8 @@ cat cmd/template/command/default.go | sed "s@template@${PROJECT_NAME}@g" > temp 
 
 cat pkg/task/test.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf pkg/task/test.go && mv temp pkg/task/test.go
 
+cat script/ci-prod.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf script/ci-prod.go && mv temp script/ci-prod.go
+
+cat script/ci-test.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf script/ci-test.go && mv temp script/ci-test.go
+
+
