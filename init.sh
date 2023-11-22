@@ -8,8 +8,6 @@ cat README_zh-cn.md | sed "s@XXX@${PROJECT_NAME}@g" > temp && rm -rf README_zh-c
 
 cat Dockerfile | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf Dockerfile && mv temp Dockerfile
 
-mv ./cmd/template ./cmd/"${PROJECT_NAME}"
-
 cat version/version.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf version/version.go && mv temp version/version.go
 
 cat cmd/template/main.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf cmd/template/main.go && mv temp cmd/template/main.go
@@ -18,8 +16,10 @@ cat cmd/template/command/default.go | sed "s@template@${PROJECT_NAME}@g" > temp 
 
 cat pkg/task/test.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf pkg/task/test.go && mv temp pkg/task/test.go
 
-cat script/ci-prod.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf script/ci-prod.go && mv temp script/ci-prod.go
+cat script/ci-prod.sh | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf script/ci-prod.sh && mv temp script/ci-prod.sh
 
-cat script/ci-test.go | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf script/ci-test.go && mv temp script/ci-test.go
+cat script/ci-test.sh | sed "s@template@${PROJECT_NAME}@g" > temp && rm -rf script/ci-test.sh && mv temp script/ci-test.sh
+
+mv ./cmd/template ./cmd/"${PROJECT_NAME}"
 
 
