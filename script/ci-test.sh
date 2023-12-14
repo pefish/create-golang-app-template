@@ -2,11 +2,9 @@
 
 set -euxo pipefail
 
-projectName="template"
-srcPath=`pwd`
-configPath=$CONFIG_PATH
+projectName="username-app-name"
+configPath="~/data/username/app-name-test"
 
-cd ${srcPath}
 
 git reset --hard && git pull && git checkout test && git pull
 
@@ -21,4 +19,3 @@ sudo docker stop ${projectName}-test && sudo docker rm ${projectName}-test
 sudo docker run --name ${projectName}-test -d -v ${configPath}:/app/config ${imageName}
 
 
-# CONFIG_PATH=** ./script/ci-test.sh

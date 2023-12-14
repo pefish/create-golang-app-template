@@ -5,7 +5,7 @@ import (
 	"time"
 
 	go_logger "github.com/pefish/go-logger"
-	"github.com/pefish/template/pkg/global"
+	"package-name/pkg/global"
 )
 
 type Test struct {

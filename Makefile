@@ -10,12 +10,12 @@ build-cur:
 	$(GOPATH)/bin/go-build-tool
 
 install: build-cur
-	sudo install -C ./build/bin/linux/template /usr/local/bin/template
+	sudo install -C ./build/bin/linux/app-name /usr/local/bin/app-name
 
 install-service: install
 	sudo mkdir -p /etc/systemd/system
-	sudo install -C -m 0644 ./script/template.service /etc/systemd/system/template.service
+	sudo install -C -m 0644 ./script/app-name.service /etc/systemd/system/app-name.service
 	sudo systemctl daemon-reload
 	@echo
-	@echo "template service installed."
+	@echo "app-name service installed."
 

@@ -1,32 +1,32 @@
-# XXX
+# app-name
 
-[![view examples](https://img.shields.io/badge/learn%20by-examples-0C8EC5.svg?style=for-the-badge&logo=go)](https://github.com/pefish/XXX)
+[![view examples](https://img.shields.io/badge/learn%20by-examples-0C8EC5.svg?style=for-the-badge&logo=go)](https://package-name)
 
 Read this in other languages: [English](README.md), [简体中文](README_zh-cn.md)
 
-XXX
+app-name
 
 ## 安装
 
 ```
-go install github.com/pefish/XXX/cmd/XXX@latest
+go install package-name/cmd/app-name@latest
 ```
 
 ## 快速开始
 
 ```shell script
-XXX --config=/path/to/config
+app-name --config=/path/to/config
 ```
 
 或者
 
 ```shell script
-GO_CONFIG=/path/to/config XXX
+GO_CONFIG=/path/to/config app-name
 ```
 
 ## 文档
 
-[doc](https://godoc.org/github.com/pefish/XXX)
+[doc](https://godoc.org/package-name)
 
 ## 贡献代码（非常欢迎）
 

@@ -6,8 +6,8 @@ import (
 	"github.com/pefish/go-commander"
 	go_config "github.com/pefish/go-config"
 	task_driver "github.com/pefish/go-task-driver"
-	"github.com/pefish/template/pkg/global"
-	"github.com/pefish/template/pkg/task"
+	"package-name/pkg/global"
+	"package-name/pkg/task"
 )
 
 type DefaultCommand struct {
