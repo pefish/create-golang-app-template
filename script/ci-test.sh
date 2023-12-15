@@ -3,7 +3,7 @@
 set -euxo pipefail
 
 projectName="username-app-name"
-configPath="~/data/username/app-name-test"
+configPath="${HOME}/data/username/app-name-test"
 
 
 git reset --hard && git pull && git checkout test && git pull
