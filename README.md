@@ -1,27 +1,27 @@
-# app-name
+# _app-name_
 
 [![view examples](https://img.shields.io/badge/learn%20by-examples-0C8EC5.svg?style=for-the-badge&logo=go)](https://package-name)
 
 Read this in other languages: [English](README.md), [简体中文](README_zh-cn.md)
 
-app-name
+_app-name_
 
 ## Install
 
 ```
-go install package-name/cmd/app-name@latest
+go install package-name/cmd/_app-name_@latest
 ```
 
 ## Quick start
 
 ```shell script
-app-name --config=/path/to/config
+_app-name_ --config=/path/to/config
 ```
 
 or
 
 ```shell script
-GO_CONFIG=/path/to/config app-name
+GO_CONFIG=/path/to/config _app-name_
 ```
 
 ## Document
