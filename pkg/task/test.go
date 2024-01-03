@@ -5,7 +5,6 @@ import (
 	"time"
 
 	go_logger "github.com/pefish/go-logger"
-	"package-name/pkg/global"
 )
 
 type Test struct {
@@ -32,7 +31,7 @@ func (t *Test) GetName() string {
 }
 
 func (t *Test) GetInterval() time.Duration {
-	return time.Duration(global.GlobalConfig.TestTask.Interval) * time.Second
+	return 3 * time.Second
 }
 
 func (t *Test) GetLogger() go_logger.InterfaceLogger {
