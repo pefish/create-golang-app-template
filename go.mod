@@ -2,17 +2,16 @@ module package-name
 
 go 1.20
 
-require (
-	github.com/pefish/go-commander v0.5.1
-	github.com/pefish/go-config v0.2.5
-	github.com/pefish/go-logger v0.4.16
-	github.com/pefish/go-task-driver v0.1.9
-)
+require github.com/pefish/go-logger v0.5.5
 
 require (
 	github.com/BurntSushi/toml v0.3.1 // indirect
+	github.com/fatih/structs v1.1.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
-	github.com/pefish/go-reflect v0.2.2 // indirect
+	github.com/pefish/go-commander v0.5.2 // indirect
+	github.com/pefish/go-config v0.3.0 // indirect
+	github.com/pefish/go-format v0.2.5 // indirect
+	github.com/pefish/go-task-driver v0.2.2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	go.uber.org/atomic v1.5.0 // indirect
 	go.uber.org/multierr v1.3.0 // indirect

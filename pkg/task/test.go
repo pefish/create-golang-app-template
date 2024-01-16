@@ -17,6 +17,10 @@ func NewTest() *Test {
 	return w
 }
 
+func (t *Test) Init(ctx context.Context) error {
+	return nil
+}
+
 func (t *Test) Run(ctx context.Context) error {
 	t.GetLogger().Info("test")
 	return nil

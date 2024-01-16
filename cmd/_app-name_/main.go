@@ -9,7 +9,11 @@ import (
 
 func main() {
 	commanderInstance := commander.NewCommander(version.AppName, version.Version, version.AppName+" is a template.")
-	commanderInstance.RegisterDefaultSubcommand("Use this command by default if you don't set subcommand.", command.NewDefaultCommand())
+	commanderInstance.RegisterDefaultSubcommand(&commander.SubcommandInfo{
+		Desc:       "Use this command by default if you don't set subcommand.",
+		Args:       nil,
+		Subcommand: command.NewDefaultCommand(),
+	})
 	err := commanderInstance.Run()
 	if err != nil {
 		go_logger.Logger.Error(err)
