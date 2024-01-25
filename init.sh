@@ -4,34 +4,34 @@ cat go.mod | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf go.mod && m
 
 cat README.md | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf README.md && mv temp README.md
 
-cat README.md | sed "s@_app-name_@${APP_NAME}@g" > temp && rm -rf README.md && mv temp README.md
+cat README.md | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf README.md && mv temp README.md
 
 cat README_zh-cn.md | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf README_zh-cn.md && mv temp README_zh-cn.md
 
-cat README_zh-cn.md | sed "s@_app-name_@${APP_NAME}@g" > temp && rm -rf README_zh-cn.md && mv temp README_zh-cn.md
+cat README_zh-cn.md | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf README_zh-cn.md && mv temp README_zh-cn.md
 
-cat Dockerfile | sed "s@_app-name_@${APP_NAME}@g" > temp && rm -rf Dockerfile && mv temp Dockerfile
+cat Dockerfile | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf Dockerfile && mv temp Dockerfile
 
-cat version/version.go | sed "s@_app-name_@${APP_NAME}@g" > temp && rm -rf version/version.go && mv temp version/version.go
+cat version/version.go | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf version/version.go && mv temp version/version.go
 
-cat cmd/_app-name_/main.go | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf cmd/_app-name_/main.go && mv temp cmd/_app-name_/main.go
+cat cmd/app-name/main.go | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf cmd/app-name/main.go && mv temp cmd/app-name/main.go
 
-cat cmd/_app-name_/main.go | sed "s@_app-name_@${APP_NAME}@g" > temp && rm -rf cmd/_app-name_/main.go && mv temp cmd/_app-name_/main.go
+cat cmd/app-name/main.go | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf cmd/app-name/main.go && mv temp cmd/app-name/main.go
 
-cat cmd/_app-name_/command/default.go | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf cmd/_app-name_/command/default.go && mv temp cmd/_app-name_/command/default.go
+cat cmd/app-name/command/default.go | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf cmd/app-name/command/default.go && mv temp cmd/app-name/command/default.go
 
 cat pkg/task/test.go | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf pkg/task/test.go && mv temp pkg/task/test.go
 
-cat .github/workflows/deploy_main.yml | sed "s@_app-name_@${APP_NAME}@g" > temp && rm -rf .github/workflows/deploy_main.yml && mv temp .github/workflows/deploy_main.yml
+cat .github/workflows/deploy_main.yml | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf .github/workflows/deploy_main.yml && mv temp .github/workflows/deploy_main.yml
 
 cat .github/workflows/deploy_main.yml | sed "s@_username_@${USERNAME}@g" > temp && rm -rf .github/workflows/deploy_main.yml && mv temp .github/workflows/deploy_main.yml
 
-cat .github/workflows/deploy_test.yml | sed "s@_app-name_@${APP_NAME}@g" > temp && rm -rf .github/workflows/deploy_test.yml && mv temp .github/workflows/deploy_test.yml
+cat .github/workflows/deploy_test.yml | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf .github/workflows/deploy_test.yml && mv temp .github/workflows/deploy_test.yml
 
 cat .github/workflows/deploy_test.yml | sed "s@_username_@${USERNAME}@g" > temp && rm -rf .github/workflows/deploy_test.yml && mv temp .github/workflows/deploy_test.yml
 
-cat Makefile | sed "s@_app-name_@${APP_NAME}@g" > temp && rm -rf Makefile && mv temp Makefile
+cat Makefile | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf Makefile && mv temp Makefile
 
 cp config/sample.yaml config/local.yaml
 
-mv ./cmd/_app-name_ ./cmd/"${APP_NAME}"
+mv ./cmd/app-name ./cmd/"${APP_NAME}"

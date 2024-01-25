@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/pefish/go-commander"
 	go_logger "github.com/pefish/go-logger"
-	"package-name/cmd/_app-name_/command"
+	"package-name/cmd/app-name/command"
 	"package-name/version"
 )
 

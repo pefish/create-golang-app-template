@@ -20,11 +20,11 @@ jobs:
           data: >-
             {
               "env": "test",
-              "project_name": "_username_-_app-name_",
-              "src_path": "~/src/_username_/_app-name_",
+              "project_name": "_username_-app-name",
+              "src_path": "~/src/_username_/app-name",
               "token": "${{ secrets.TOKEN }}",
               "port": 0,
-              "config_path": "~/data/_username_/_app-name_-test",
+              "config_path": "~/data/_username_/app-name-test",
               "alert_tg_token": "",
               "alert_tg_group_id": "",
               "loki_url": ""
