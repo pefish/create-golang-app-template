@@ -14,7 +14,7 @@ jobs:
       - name: Deploy
         uses: fjogeleit/http-request-action@v1
         with:
-          url: 'http://52.68.233.193:10020/api/v1/ci-start'
+          url: 'http://xxx/api/v1/ci-start'
           method: 'POST'
           customHeaders: '{"Content-Type": "application/json"}'
           data: >-
