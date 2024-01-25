@@ -13,7 +13,7 @@ type Test struct {
 
 func NewTest() *Test {
 	w := &Test{}
-	w.logger = go_logger.Logger.CloneWithPrefix(w.GetName())
+	w.logger = go_logger.Logger.CloneWithPrefix(w.Name())
 	return w
 }
 
@@ -22,7 +22,7 @@ func (t *Test) Init(ctx context.Context) error {
 }
 
 func (t *Test) Run(ctx context.Context) error {
-	t.GetLogger().Info("test")
+	t.Logger().Info("test")
 	return nil
 }
 
@@ -30,14 +30,14 @@ func (t *Test) Stop() error {
 	return nil
 }
 
-func (t *Test) GetName() string {
+func (t *Test) Name() string {
 	return "Test"
 }
 
-func (t *Test) GetInterval() time.Duration {
+func (t *Test) Interval() time.Duration {
 	return 3 * time.Second
 }
 
-func (t *Test) GetLogger() go_logger.InterfaceLogger {
+func (t *Test) Logger() go_logger.InterfaceLogger {
 	return t.logger
 }

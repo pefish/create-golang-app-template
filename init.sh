@@ -22,14 +22,6 @@ cat cmd/_app-name_/command/default.go | sed "s@package-name@${PACKAGE_NAME}@g" >
 
 cat pkg/task/test.go | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf pkg/task/test.go && mv temp pkg/task/test.go
 
-cat script/ci-prod.sh | sed "s@_app-name_@${APP_NAME}@g" > temp && rm -rf script/ci-prod.sh && mv temp script/ci-prod.sh
-
-cat script/ci-prod.sh | sed "s@_username_@${USERNAME}@g" > temp && rm -rf script/ci-prod.sh && mv temp script/ci-prod.sh
-
-cat script/ci-test.sh | sed "s@_app-name_@${APP_NAME}@g" > temp && rm -rf script/ci-test.sh && mv temp script/ci-test.sh
-
-cat script/ci-test.sh | sed "s@_username_@${USERNAME}@g" > temp && rm -rf script/ci-test.sh && mv temp script/ci-test.sh
-
 cat .github/workflows/deploy_main.yml | sed "s@_app-name_@${APP_NAME}@g" > temp && rm -rf .github/workflows/deploy_main.yml && mv temp .github/workflows/deploy_main.yml
 
 cat .github/workflows/deploy_main.yml | sed "s@_username_@${USERNAME}@g" > temp && rm -rf .github/workflows/deploy_main.yml && mv temp .github/workflows/deploy_main.yml
@@ -43,5 +35,3 @@ cat Makefile | sed "s@_app-name_@${APP_NAME}@g" > temp && rm -rf Makefile && mv 
 cp config/sample.yaml config/local.yaml
 
 mv ./cmd/_app-name_ ./cmd/"${APP_NAME}"
-
-chmod +x ./script/ci-prod.sh ./script/ci-test.sh
