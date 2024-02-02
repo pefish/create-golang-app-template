@@ -3,7 +3,7 @@ module package-name
 go 1.20
 
 require (
-	github.com/pefish/go-commander v0.6.1
+	github.com/pefish/go-commander v0.6.2
 	github.com/pefish/go-config v0.4.0
 	github.com/pefish/go-logger v0.5.5
 	github.com/pefish/go-task-driver v0.2.3
