@@ -1,4 +1,5 @@
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
+github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/fatih/structs v1.1.0 h1:Q7juDM0QtcnhCpeyLGQKyg4TOIghuNXrkL32pHAUMxo=
 github.com/fatih/structs v1.1.0/go.mod h1:9NiDSp5zOcgEDl+j00MP/WkGVPOlPRLejGD8Ga6PJ7M=
 github.com/kr/pretty v0.3.1 h1:flRD4NNwYAUpkphVc1HcthR4KEIFJ65n8Mw5qdRn3LE=
@@ -11,8 +12,8 @@ github.com/pefish/go-config v0.4.0 h1:kxQ8vU5iLUzd09ALZjViqWhkqBCjTHOU6FR/l6t3lB
 github.com/pefish/go-config v0.4.0/go.mod h1:ZyhAhUtRSkFG1DhJ3nFnuzGKr/Is+7pvYHtPKEejTn0=
 github.com/pefish/go-format v0.3.2 h1:0MihBkCV8WdY5GmHiaCAJnzbgv25mFmUcfnmumdSKrA=
 github.com/pefish/go-format v0.3.2/go.mod h1:rI2ykz+2t8VattiNtK1yxm0KwsBOJTyPOMwSFblW62A=
-github.com/pefish/go-logger v0.5.5 h1:GqOUXQdVrafMhBy0Hlq7A9Oqp65GppSSsnw8zyDEIEs=
-github.com/pefish/go-logger v0.5.5/go.mod h1:IN1qdbxaVfsT518o9lsj8YY0bCi6E8kakuiVzG6pICA=
+github.com/pefish/go-logger v0.5.6 h1:eAsk4iOZp/9fh5Rz/uRjtidNXBh4ovrgIHEkb/K297c=
+github.com/pefish/go-logger v0.5.6/go.mod h1:Bj/z0Fz57Yvj+06UNKyqO461MFbj1Oxvtbo0bfVL79s=
 github.com/pefish/go-task-driver v0.2.3 h1:h88ZO4v5cBndZdaxDucB9yJJM0vdDf9vAQ6lA/6ciU8=
 github.com/pefish/go-task-driver v0.2.3/go.mod h1:wT3yVq14BccR+tg1W95qUbgDtmwykjFM2BmjWyCv8fM=
 github.com/pefish/go-test v0.0.4 h1:s1RmZWe91K1MtENJUcl7CjGUFK/TmleZ5h3OkHq/BTI=
