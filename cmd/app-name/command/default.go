@@ -1,8 +1,6 @@
 package command
 
 import (
-	"flag"
-
 	"package-name/pkg/global"
 	"package-name/pkg/task"
 
@@ -18,8 +16,8 @@ func NewDefaultCommand() *DefaultCommand {
 	return &DefaultCommand{}
 }
 
-func (dc *DefaultCommand) DecorateFlagSet(flagSet *flag.FlagSet) error {
-	return nil
+func (dc *DefaultCommand) Config() interface{} {
+	return &global.GlobalConfig
 }
 
 func (dc *DefaultCommand) Init(command *commander.Commander) error {

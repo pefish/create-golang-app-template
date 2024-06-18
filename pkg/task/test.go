@@ -2,6 +2,7 @@ package task
 
 import (
 	"context"
+	"package-name/pkg/global"
 	"time"
 
 	go_logger "github.com/pefish/go-logger"
@@ -22,7 +23,7 @@ func (t *Test) Init(ctx context.Context) error {
 }
 
 func (t *Test) Run(ctx context.Context) error {
-	t.Logger().Info("test")
+	t.Logger().Info(global.GlobalConfig)
 	return nil
 }
 
