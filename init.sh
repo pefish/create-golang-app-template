@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# 设置合适的区域设置
+export LC_ALL=C
+export LANG=C
+
 set -euxo pipefail
 
 cat go.mod | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf go.mod && mv temp go.mod
