@@ -20,6 +20,10 @@ func (dc *DefaultCommand) Config() interface{} {
 	return &global.GlobalConfig
 }
 
+func (dc *DefaultCommand) Data() interface{} {
+	return &global.GlobalData
+}
+
 func (dc *DefaultCommand) Init(command *commander.Commander) error {
 	err := go_config.ConfigManagerInstance.Unmarshal(&global.GlobalConfig)
 	if err != nil {

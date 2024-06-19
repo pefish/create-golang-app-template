@@ -13,4 +13,8 @@ type Config struct {
 	Test string `json:"test" default:"t" usage:"This is test param."`
 }
 
+type Data struct {
+}
+
 var GlobalConfig Config
+var GlobalData Data
