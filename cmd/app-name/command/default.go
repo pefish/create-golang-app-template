@@ -26,10 +26,10 @@ func (dc *DefaultCommand) Data() interface{} {
 func (dc *DefaultCommand) Init(command *commander.Commander) error {
 	// go_mysql.MysqlInstance.SetLogger(go_logger.Logger)
 	// err := go_mysql.MysqlInstance.ConnectWithConfiguration(go_mysql.Configuration{
-	// 	Host:     global.GlobalConfig.Db.Host,
-	// 	Username: global.GlobalConfig.Db.User,
-	// 	Password: global.GlobalConfig.Db.Pass,
-	// 	Database: global.GlobalConfig.Db.Db,
+	// 	Host:     global.GlobalConfig.DbHost,
+	// 	Username: global.GlobalConfig.DbUser,
+	// 	Password: global.GlobalConfig.DbPass,
+	// 	Database: global.GlobalConfig.DbDatabase,
 	// })
 	// if err != nil {
 	// 	return err

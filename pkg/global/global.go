@@ -4,13 +4,11 @@ import "github.com/pefish/go-commander"
 
 type Config struct {
 	commander.BasicConfig
-	//Db struct {
-	//	Db   string `json:"db"`
-	//	Host string `json:"host"`
-	//	User string `json:"user"`
-	//	Pass string `json:"pass"`
-	//} `json:"db"`
-	Test string `json:"test" default:"t" usage:"This is test param."`
+	DbHost     string `json:"db-host" default:"mysql" usage:"Database host."`
+	DbPort     int    `json:"db-port" default:"3306" usage:"Database port."`
+	DbDatabase string `json:"db-db" default:"" usage:"Database to connect."`
+	DbUser     string `json:"db-user" default:"admin" usage:"Username to connect database."`
+	DbPass     string `json:"db-pass" default:"" usage:"Password to connect database."`
 }
 
 var GlobalConfig Config
