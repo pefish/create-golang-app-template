@@ -29,7 +29,7 @@ func (dc *DefaultCommand) Init(command *commander.Commander) error {
 	// 	Host:     global.GlobalConfig.DbHost,
 	// 	Username: global.GlobalConfig.DbUser,
 	// 	Password: global.GlobalConfig.DbPass,
-	// 	Database: global.GlobalConfig.DbDatabase,
+	// 	Database: global.GlobalConfig.DbDb,
 	// })
 	// if err != nil {
 	// 	return err
