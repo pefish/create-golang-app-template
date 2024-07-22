@@ -30,11 +30,11 @@ cat pkg/task/test.go | sed "s@package-name@${PACKAGE_NAME}@g" > temp && rm -rf p
 
 cat .github/workflows/deploy_main.yml | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf .github/workflows/deploy_main.yml && mv temp .github/workflows/deploy_main.yml
 
-cat .github/workflows/deploy_main.yml | sed "s@_username_@${USERNAME}@g" > temp && rm -rf .github/workflows/deploy_main.yml && mv temp .github/workflows/deploy_main.yml
+cat .github/workflows/deploy_main.yml | sed "s@user-name@${USERNAME}@g" > temp && rm -rf .github/workflows/deploy_main.yml && mv temp .github/workflows/deploy_main.yml
 
 cat .github/workflows/deploy_test.yml | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf .github/workflows/deploy_test.yml && mv temp .github/workflows/deploy_test.yml
 
-cat .github/workflows/deploy_test.yml | sed "s@_username_@${USERNAME}@g" > temp && rm -rf .github/workflows/deploy_test.yml && mv temp .github/workflows/deploy_test.yml
+cat .github/workflows/deploy_test.yml | sed "s@user-name@${USERNAME}@g" > temp && rm -rf .github/workflows/deploy_test.yml && mv temp .github/workflows/deploy_test.yml
 
 cat Makefile | sed "s@app-name@${APP_NAME}@g" > temp && rm -rf Makefile && mv temp Makefile
 
