@@ -5,11 +5,12 @@ import (
 	"package-name/pkg/global"
 	"time"
 
+	i_logger "github.com/pefish/go-interface/i-logger"
 	go_logger "github.com/pefish/go-logger"
 )
 
 type Test struct {
-	logger go_logger.InterfaceLogger
+	logger i_logger.ILogger
 }
 
 func NewTest() *Test {
@@ -39,6 +40,6 @@ func (t *Test) Interval() time.Duration {
 	return 3 * time.Second
 }
 
-func (t *Test) Logger() go_logger.InterfaceLogger {
+func (t *Test) Logger() i_logger.ILogger {
 	return t.logger
 }
