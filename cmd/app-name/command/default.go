@@ -24,8 +24,8 @@ func (dc *DefaultCommand) Data() interface{} {
 }
 
 func (dc *DefaultCommand) Init(command *commander.Commander) error {
-	// go_mysql.MysqlInstance.SetLogger(go_logger.Logger)
-	// err := go_mysql.MysqlInstance.ConnectWithConfiguration(go_mysql.Configuration{
+	// global.MysqlInstance = go_mysql.NewMysqlInstance(command.Logger)
+	// err := global.MysqlInstance.ConnectWithConfiguration(t_mysql.Configuration{
 	// 	Host:     global.GlobalConfig.DbHost,
 	// 	Username: global.GlobalConfig.DbUser,
 	// 	Password: global.GlobalConfig.DbPass,
@@ -39,7 +39,7 @@ func (dc *DefaultCommand) Init(command *commander.Commander) error {
 }
 
 func (dc *DefaultCommand) OnExited(command *commander.Commander) error {
-	//go_mysql.MysqlInstance.Close()
+	//global.MysqlInstance.Close()
 	return nil
 }
 

@@ -12,3 +12,5 @@ type Config struct {
 }
 
 var GlobalConfig Config
+
+// var MysqlInstance *go_mysql.MysqlType
