@@ -8,11 +8,17 @@ import (
 	task_driver "github.com/pefish/go-task-driver"
 )
 
+type PersistenceDataType struct {
+}
+
 type DefaultCommand struct {
+	persistenceData *PersistenceDataType
 }
 
 func NewDefaultCommand() *DefaultCommand {
-	return &DefaultCommand{}
+	return &DefaultCommand{
+		persistenceData: &PersistenceDataType{},
+	}
 }
 
 func (dc *DefaultCommand) Config() interface{} {
@@ -20,7 +26,7 @@ func (dc *DefaultCommand) Config() interface{} {
 }
 
 func (dc *DefaultCommand) Data() interface{} {
-	return nil
+	return dc.persistenceData
 }
 
 func (dc *DefaultCommand) Init(command *commander.Commander) error {
