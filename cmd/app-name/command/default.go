@@ -45,7 +45,7 @@ func (dc *DefaultCommand) OnExited(command *commander.Commander) error {
 
 func (dc *DefaultCommand) Start(command *commander.Commander) error {
 	taskDriver := task_driver.NewTaskDriver()
-	taskDriver.Register(task.NewTest())
+	taskDriver.Register(task.NewTest(command.Logger))
 	taskDriver.RunWait(command.Ctx)
 	return nil
 }

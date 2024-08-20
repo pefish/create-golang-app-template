@@ -6,16 +6,15 @@ import (
 	"time"
 
 	i_logger "github.com/pefish/go-interface/i-logger"
-	go_logger "github.com/pefish/go-logger"
 )
 
 type Test struct {
 	logger i_logger.ILogger
 }
 
-func NewTest() *Test {
+func NewTest(logger i_logger.ILogger) *Test {
 	w := &Test{}
-	w.logger = go_logger.Logger.CloneWithPrefix(w.Name())
+	w.logger = logger.CloneWithPrefix(w.Name())
 	return w
 }
 
