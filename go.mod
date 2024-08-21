@@ -16,7 +16,7 @@ require (
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/pefish/go-config v0.5.0 // indirect
 	github.com/pefish/go-file v0.2.3 // indirect
-	github.com/pefish/go-format v0.3.2 // indirect
+	github.com/pefish/go-format v0.3.3 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
