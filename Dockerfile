@@ -1,4 +1,4 @@
-FROM pefish/ubuntu-go:v1.21 as builder
+FROM pefish/ubuntu-go:v1.22 as builder
 WORKDIR /app
 ENV GO111MODULE=on
 COPY ./ ./
