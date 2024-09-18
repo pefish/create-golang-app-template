@@ -1,11 +1,11 @@
 module package-name
 
-go 1.21
+go 1.22.0
 
 require (
-	github.com/pefish/go-commander v1.0.5
+	github.com/pefish/go-commander v1.1.1
 	github.com/pefish/go-interface v0.1.2
-	github.com/pefish/go-logger v0.6.1
+	github.com/pefish/go-logger v0.6.2
 	github.com/pefish/go-task-driver v0.2.4
 )
 
@@ -14,8 +14,7 @@ require (
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
-	github.com/pefish/go-config v0.5.0 // indirect
-	github.com/pefish/go-file v0.2.3 // indirect
+	github.com/pefish/go-config v0.5.4 // indirect
 	github.com/pefish/go-format v0.3.3 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	go.uber.org/multierr v1.11.0 // indirect

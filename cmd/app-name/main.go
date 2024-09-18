@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"package-name/cmd/app-name/command"
 	"package-name/version"
 
 	"github.com/pefish/go-commander"
-	go_logger "github.com/pefish/go-logger"
 )
 
 func main() {
@@ -22,6 +22,6 @@ func main() {
 	})
 	err := commanderInstance.Run()
 	if err != nil {
-		go_logger.Logger.Error(err)
+		log.Fatal(err)
 	}
 }
