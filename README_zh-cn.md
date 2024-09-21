@@ -15,13 +15,7 @@ go install package-name/cmd/app-name@latest
 ## 快速开始
 
 ```shell script
-app-name --config=/path/to/config
-```
-
-或者
-
-```shell script
-GO_CONFIG=/path/to/config app-name
+app-name --help
 ```
 
 ## 文档
@@ -32,11 +26,11 @@ GO_CONFIG=/path/to/config app-name
 
 1. Fork 仓库
 2. 代码 Clone 到你本机
-3. 创建feature分支 (`git checkout -b my-new-feature`)
+3. 创建 feature 分支 (`git checkout -b my-new-feature`)
 4. 编写代码然后 Add 代码 (`git add .`)
 5. Commin 代码 (`git commit -m 'Add some feature'`)
 6. Push 代码 (`git push origin my-new-feature`)
-7. 提交pull request
+7. 提交 pull request
 
 ## 安全漏洞
 
