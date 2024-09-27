@@ -8,7 +8,7 @@ app-name
 
 ## Install
 
-```
+```shell
 go install package-name/cmd/app-name@latest
 ```
 
