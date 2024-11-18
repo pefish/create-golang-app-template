@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"package-name/cmd/app-name/command"
 	"package-name/version"
 
@@ -22,6 +21,6 @@ func main() {
 	})
 	err := commanderInstance.Run()
 	if err != nil {
-		log.Fatal(err)
+		commanderInstance.Logger.Error(err)
 	}
 }
