@@ -3,8 +3,8 @@ module package-name
 go 1.22.0
 
 require (
-	github.com/pefish/go-commander v1.1.1
-	github.com/pefish/go-interface v0.1.3
+	github.com/pefish/go-commander v1.1.2
+	github.com/pefish/go-interface v0.1.5
 	github.com/pefish/go-task-driver v0.2.4
 )
 
@@ -20,6 +20,6 @@ require (
 	github.com/pkg/errors v0.9.1 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
-	golang.org/x/text v0.20.0 // indirect
+	golang.org/x/text v0.21.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
