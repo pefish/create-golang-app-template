@@ -14,7 +14,7 @@ go install package-name/cmd/app-name@latest
 
 ## Quick start
 
-```shell script
+```shell
 app-name --help
 ```
 

@@ -8,13 +8,13 @@ app-name
 
 ## 安装
 
-```
+```shell
 go install package-name/cmd/app-name@latest
 ```
 
 ## 快速开始
 
-```shell script
+```shell
 app-name --help
 ```
 
