@@ -11,6 +11,8 @@ type Config struct {
 	// DbPass string `json:"db-pass" default:"" usage:"Password to connect database."`
 }
 
+var Commander *commander.Commander
+
 var GlobalConfig Config
 
 // var MysqlInstance *go_mysql.MysqlType
