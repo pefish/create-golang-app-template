@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	global.Commander = commander.NewCommander(
+	global.Commander = commander.New(
 		version.AppName,
 		version.Version,
 		fmt.Sprintf("%s is a template. Author: pefish", version.AppName),
