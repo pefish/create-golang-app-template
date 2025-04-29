@@ -3,7 +3,7 @@ module package-name
 go 1.22.0
 
 require (
-	github.com/pefish/go-commander v1.1.3
+	github.com/pefish/go-commander v1.1.7
 	github.com/pefish/go-interface v0.1.5
 	github.com/pefish/go-task-driver v0.2.4
 )
