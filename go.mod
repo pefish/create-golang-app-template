@@ -1,6 +1,6 @@
 module package-name
 
-go 1.22.0
+go 1.24.0
 
 require (
 	github.com/joho/godotenv v1.5.1
@@ -16,11 +16,11 @@ require (
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/pefish/go-config v0.5.9 // indirect
-	github.com/pefish/go-format v0.5.1 // indirect
+	github.com/pefish/go-format v0.5.4 // indirect
 	github.com/pefish/go-logger v0.6.2 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
-	go.uber.org/zap v1.27.0 // indirect
-	golang.org/x/text v0.21.0 // indirect
+	go.uber.org/zap v1.27.1 // indirect
+	golang.org/x/text v0.31.0 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
